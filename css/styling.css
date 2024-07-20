@@ -121,6 +121,7 @@ body #area{
     color: white;
     padding: 0 8px 0 8px;
     font-size: 18px;
+    width: 100%;
 }
 .alerto button{
     float: left;
