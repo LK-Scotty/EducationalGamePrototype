@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Maincra;
+    src: url("assets/fonts/Minecraft.ttf");
+}
 #debugger{
     position:fixed;
     left:0;
@@ -5,6 +9,7 @@
     z-index: 9;
     color: goldenrod;
     font-weight: bold;
+    display: none;
 }
 body{
     margin: 0;
@@ -40,19 +45,49 @@ body #area{
     position: fixed;
     transform: translate(-50%,-50%);
 }
-#game-jump{
+.leaf-particle{
     position: fixed;
-    border: 2px solid white;
-    background-color:rgba(255,255,255,0.3);
-    border-radius: 50%;
-    z-index: 9;
-    right: 8%;
-    bottom: 10%;
-    width: 70px;
-    height: 70px;
-    outline: none;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-30%,-50%) scale(0);
+    width: 36%;
+    transition: 0.1s;
 }
-#game-jump img{
-    filter: invert(100%);
-    width: 90%;
+#timer{
+    z-index: 10;
+    position: fixed;
+    right: 3%;
+    margin-top: 0;
+    top: 20px;
+    font-family: Maincra;
+    font-size: 46px;
+    color: #EC0928;
+    pointer-events: none;
+}
+#timer span{
+    font-size: 24px;
+    margin-left: 4px;
+}
+#pauseBtn{
+    position: fixed;
+    z-index: 9;
+    top: 17px;
+    left: 5%;
+}
+#pauseBtn img{
+    width: 40px;
+    float: left;
+}
+.img-play{
+    display: none;
+}
+#weedCount{
+    position: fixed;
+    bottom: 20px;
+    font-family: Maincra;
+    font-size: 36px;
+    color: #EC0928;
+    z-index: 10;
+    left: 3%;
 }
